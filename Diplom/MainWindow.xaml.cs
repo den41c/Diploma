@@ -24,5 +24,16 @@ namespace Diplom
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var n = (Math.Truncate(
+                Double.Parse(c_tb.Text) *
+                Double.Parse(tc_tb.Text) *
+                Math.Log(Double.Parse(r_tb.Text)) /
+                Double.Parse(tn_tb.Text)));
+            result_n.Text = n.ToString();
+            result_l.Text = (Math.Ceiling(Math.Log(n)/ Math.Log(Double.Parse(r_tb.Text)))).ToString();
+        }
     }
 }
