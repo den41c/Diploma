@@ -1,2 +1,2 @@
 # Diploma
-DiplomWeb1
+DiplomWeb
